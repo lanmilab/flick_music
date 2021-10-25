@@ -1,0 +1,526 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "flick_music shield"
+Date "2021-10-25"
+Rev "1.0"
+Comp "LanmiLab"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A1
+U 1 1 61745E3D
+P 5150 3375
+F 0 "A1" H 5500 4350 50  0000 C CNN
+F 1 "Arduino_UNO_R3 Conn" H 5675 2325 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 5150 3375 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 5150 3375 50  0001 C CNN
+F 4 "M20-9994045" H 5150 3375 50  0001 C CNN "Part Number"
+	1    5150 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 61748B68
+P 2725 2900
+F 0 "J1" H 2643 2275 50  0000 C CNN
+F 1 "Conn_01x08" H 2643 2366 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal" H 2725 2900 50  0001 C CNN
+F 3 "~" H 2725 2900 50  0001 C CNN
+F 4 "68016-208HLF" H 2725 2900 50  0001 C CNN "Part Number"
+	1    2725 2900
+	-1   0    0    1   
+$EndComp
+Text Notes 2450 4675 0    50   ~ 0
+Flick Large FPC
+Text Notes 2400 3350 0    50   ~ 0
+Flick Large Pin Header
+Wire Wire Line
+	2925 2600 3275 2600
+Wire Wire Line
+	2925 2700 3275 2700
+Wire Wire Line
+	2925 2800 3275 2800
+Wire Wire Line
+	2925 2900 3275 2900
+Wire Wire Line
+	2925 3100 3275 3100
+Wire Wire Line
+	2925 3200 3275 3200
+$Comp
+L power:VCC #PWR01
+U 1 1 6174D670
+P 3275 2500
+F 0 "#PWR01" H 3275 2350 50  0001 C CNN
+F 1 "VCC" H 3275 2650 50  0000 C CNN
+F 2 "" H 3275 2500 50  0001 C CNN
+F 3 "" H 3275 2500 50  0001 C CNN
+	1    3275 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Bridged12 JP1
+U 1 1 6174DEBE
+P 5225 1900
+F 0 "JP1" H 5225 2012 50  0000 C CNN
+F 1 "Jumper_3_Bridged12" H 5225 2102 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5225 1900 50  0001 C CNN
+F 3 "~" H 5225 1900 50  0001 C CNN
+	1    5225 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5475 1900 5550 1900
+$Comp
+L power:VCC #PWR06
+U 1 1 6174FFB5
+P 5225 1700
+F 0 "#PWR06" H 5225 1550 50  0001 C CNN
+F 1 "VCC" H 5225 1850 50  0000 C CNN
+F 2 "" H 5225 1700 50  0001 C CNN
+F 3 "" H 5225 1700 50  0001 C CNN
+	1    5225 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 61750BC7
+P 5550 1900
+F 0 "#PWR09" H 5550 1750 50  0001 C CNN
+F 1 "+5V" H 5550 2050 50  0000 C CNN
+F 2 "" H 5550 1900 50  0001 C CNN
+F 3 "" H 5550 1900 50  0001 C CNN
+	1    5550 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR08
+U 1 1 6175158D
+P 5350 2375
+F 0 "#PWR08" H 5350 2225 50  0001 C CNN
+F 1 "+5V" H 5425 2525 50  0000 C CNN
+F 2 "" H 5350 2375 50  0001 C CNN
+F 3 "" H 5350 2375 50  0001 C CNN
+	1    5350 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 61751C7F
+P 5250 2375
+F 0 "#PWR07" H 5250 2225 50  0001 C CNN
+F 1 "+3V3" H 5200 2525 50  0000 C CNN
+F 2 "" H 5250 2375 50  0001 C CNN
+F 3 "" H 5250 2375 50  0001 C CNN
+	1    5250 2375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61753414
+P 3400 3000
+F 0 "#PWR03" H 3400 2750 50  0001 C CNN
+F 1 "GND" H 3405 2827 50  0000 C CNN
+F 2 "" H 3400 3000 50  0001 C CNN
+F 3 "" H 3400 3000 50  0001 C CNN
+	1    3400 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4475 5050 4500
+Wire Wire Line
+	5050 4500 5150 4500
+Wire Wire Line
+	5250 4500 5250 4475
+Connection ~ 5150 4500
+Wire Wire Line
+	5150 4500 5250 4500
+Wire Wire Line
+	5150 4475 5150 4500
+Wire Wire Line
+	2925 3000 3400 3000
+Text Label 2950 2600 0    50   ~ 0
+SDA
+Text Label 2950 2700 0    50   ~ 0
+SCL
+Text Label 2950 2800 0    50   ~ 0
+~RESET
+Text Label 2950 2900 0    50   ~ 0
+TS
+Text Label 2950 3100 0    50   ~ 0
+LEDOR
+Text Label 2950 3200 0    50   ~ 0
+LEDGR
+Wire Wire Line
+	5650 4175 6000 4175
+Wire Wire Line
+	5650 4075 6000 4075
+Text Label 5675 4075 0    50   ~ 0
+SDA
+Text Label 5675 4175 0    50   ~ 0
+SCL
+Wire Wire Line
+	4650 3575 4325 3575
+Text Label 4325 3575 0    50   ~ 0
+LEDGR
+Wire Wire Line
+	4650 3675 4325 3675
+Wire Wire Line
+	4650 3975 4325 3975
+Text Label 4325 3975 0    50   ~ 0
+TS
+Wire Wire Line
+	4650 4075 4325 4075
+Text Label 4325 4075 0    50   ~ 0
+~RESET
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 6175CDFD
+P 2725 4225
+F 0 "J2" H 2643 3600 50  0000 C CNN
+F 1 "Conn_01x08" H 2643 3691 50  0000 C CNN
+F 2 "Connector_FFC-FPC:TE_0-1734839-8_1x08-1MP_P0.5mm_Horizontal" H 2725 4225 50  0001 C CNN
+F 3 "~" H 2725 4225 50  0001 C CNN
+F 4 "0-1734839-8" H 2725 4225 50  0001 C CNN "Part Number"
+	1    2725 4225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2925 3925 3275 3925
+Wire Wire Line
+	2925 4025 3275 4025
+Wire Wire Line
+	2925 4125 3275 4125
+Wire Wire Line
+	2925 4225 3275 4225
+Wire Wire Line
+	2925 4425 3275 4425
+Wire Wire Line
+	2925 4525 3275 4525
+$Comp
+L power:VCC #PWR02
+U 1 1 6175CE0A
+P 3275 3825
+F 0 "#PWR02" H 3275 3675 50  0001 C CNN
+F 1 "VCC" H 3275 3975 50  0000 C CNN
+F 2 "" H 3275 3825 50  0001 C CNN
+F 3 "" H 3275 3825 50  0001 C CNN
+	1    3275 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6175CE10
+P 3400 4325
+F 0 "#PWR04" H 3400 4075 50  0001 C CNN
+F 1 "GND" H 3405 4152 50  0000 C CNN
+F 2 "" H 3400 4325 50  0001 C CNN
+F 3 "" H 3400 4325 50  0001 C CNN
+	1    3400 4325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 4325 3400 4325
+Text Label 2950 3925 0    50   ~ 0
+SDA
+Text Label 2950 4025 0    50   ~ 0
+SCL
+Text Label 2950 4125 0    50   ~ 0
+~RESET
+Text Label 2950 4225 0    50   ~ 0
+TS
+Text Label 2950 4425 0    50   ~ 0
+LEDOR
+Text Label 2950 4525 0    50   ~ 0
+LEDGR
+Wire Wire Line
+	4650 3775 4325 3775
+Wire Wire Line
+	4775 1900 4975 1900
+Text Label 4325 3775 0    50   ~ 0
+D10
+Text Label 4775 1900 0    50   ~ 0
+D10
+$Comp
+L Symbols:PJRAN1X1U03X J3
+U 1 1 617624DD
+P 8325 2450
+F 0 "J3" H 8275 2175 50  0000 L BNN
+F 1 "RCA" H 8000 2300 50  0000 R CNN
+F 2 "Footprint:PJRAN1X1U01X" H 8325 2450 50  0001 L BNN
+F 3 "" H 8325 2450 50  0001 L BNN
+F 4 "http://datasheets.diptrace.com/con_rca_jack/pjran1x1u__x_series_cd.pdf" H 8325 2450 50  0001 L BNN "DATASHEET"
+F 5 "Switchcraft" H 8325 2450 50  0001 L BNN "MANUFACTURER"
+F 6 "PJRAN1X1U01X" H 8325 2450 50  0001 C CNN "Part Number"
+	1    8325 2450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack3 J4
+U 1 1 61763D2B
+P 8175 3750
+F 0 "J4" H 7895 3683 50  0000 R CNN
+F 1 "AudioJack3" H 8250 3950 50  0000 R CNN
+F 2 "Footprint:FC68131CLIFF" H 8175 3750 50  0001 C CNN
+F 3 "~" H 8175 3750 50  0001 C CNN
+F 4 "FC68131" H 8175 3750 50  0001 C CNN "Part Number"
+	1    8175 3750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61767F4A
+P 7225 3250
+F 0 "C1" H 7340 3296 50  0000 L CNN
+F 1 "10nF" H 7340 3205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 7263 3100 50  0001 C CNN
+F 3 "~" H 7225 3250 50  0001 C CNN
+F 4 "C315C103K1R5TA" H 7225 3250 50  0001 C CNN "Part Number"
+	1    7225 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 61768FC1
+P 6850 3025
+F 0 "R1" V 6750 3000 50  0000 C CNN
+F 1 "4.75KOhm" V 6950 3025 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6890 3015 50  0001 C CNN
+F 3 "~" H 6850 3025 50  0001 C CNN
+F 4 "MCMF0W4FF4751A50" V 6850 3025 50  0001 C CNN "Part Number"
+	1    6850 3025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3875 4325 3875
+Text Label 4325 3875 0    50   ~ 0
+AO
+Wire Wire Line
+	6700 3025 6500 3025
+Text Label 6500 3025 0    50   ~ 0
+AO
+Wire Wire Line
+	7000 3025 7225 3025
+Wire Wire Line
+	7225 3025 7225 3100
+Wire Wire Line
+	7225 3400 7225 3450
+$Comp
+L power:GND #PWR05
+U 1 1 6175295F
+P 5150 4500
+F 0 "#PWR05" H 5150 4250 50  0001 C CNN
+F 1 "GND" H 5150 4350 50  0000 C CNN
+F 2 "" H 5150 4500 50  0001 C CNN
+F 3 "" H 5150 4500 50  0001 C CNN
+	1    5150 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 6176E022
+P 7225 3450
+F 0 "#PWR010" H 7225 3200 50  0001 C CNN
+F 1 "GND" H 7225 3300 50  0000 C CNN
+F 2 "" H 7225 3450 50  0001 C CNN
+F 3 "" H 7225 3450 50  0001 C CNN
+	1    7225 3450
+	1    0    0    -1  
+$EndComp
+Text Label 7300 3025 0    50   ~ 0
+OUT
+NoConn ~ 7875 2450
+$Comp
+L power:GND #PWR013
+U 1 1 6176F939
+P 7825 2675
+F 0 "#PWR013" H 7825 2425 50  0001 C CNN
+F 1 "GND" H 7825 2525 50  0000 C CNN
+F 2 "" H 7825 2675 50  0001 C CNN
+F 3 "" H 7825 2675 50  0001 C CNN
+	1    7825 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 2650 7825 2650
+Wire Wire Line
+	7825 2650 7825 2675
+$Comp
+L power:GND #PWR015
+U 1 1 61770C75
+P 7925 3875
+F 0 "#PWR015" H 7925 3625 50  0001 C CNN
+F 1 "GND" H 7925 3725 50  0000 C CNN
+F 2 "" H 7925 3875 50  0001 C CNN
+F 3 "" H 7925 3875 50  0001 C CNN
+	1    7925 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7975 3850 7925 3850
+Wire Wire Line
+	7925 3850 7925 3875
+Wire Wire Line
+	7975 3750 7925 3750
+Wire Wire Line
+	7925 3750 7925 3650
+Wire Wire Line
+	7925 3650 7975 3650
+Connection ~ 7925 3650
+Wire Wire Line
+	7225 3025 7625 3025
+Wire Wire Line
+	7625 3650 7925 3650
+Connection ~ 7225 3025
+Wire Wire Line
+	7625 3025 7625 2250
+Wire Wire Line
+	7625 2250 7875 2250
+Connection ~ 7625 3025
+Wire Wire Line
+	7625 3025 7625 3650
+$Comp
+L Connector_Generic:Conn_01x05 J5
+U 1 1 61779619
+P 8150 4700
+F 0 "J5" H 8150 4400 50  0000 C CNN
+F 1 "AMP BREAKOUT" H 8325 5025 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 8150 4700 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/2130" H 8150 4700 50  0001 C CNN
+F 4 "PAM8302A Adafruit" H 8150 4700 50  0001 C CNN "Part Number"
+	1    8150 4700
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 6177D4DC
+P 7650 4925
+F 0 "#PWR012" H 7650 4675 50  0001 C CNN
+F 1 "GND" H 7650 4775 50  0000 C CNN
+F 2 "" H 7650 4925 50  0001 C CNN
+F 3 "" H 7650 4925 50  0001 C CNN
+	1    7650 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR014
+U 1 1 6177F514
+P 7875 4800
+F 0 "#PWR014" H 7875 4650 50  0001 C CNN
+F 1 "+5V" H 7875 4950 50  0000 C CNN
+F 2 "" H 7875 4800 50  0001 C CNN
+F 3 "" H 7875 4800 50  0001 C CNN
+	1    7875 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 4800 7875 4800
+Text Label 7725 4700 0    50   ~ 0
+AMPSD
+Wire Wire Line
+	7950 4500 7725 4500
+Text Label 7725 4500 0    50   ~ 0
+OUT
+Wire Wire Line
+	7650 4600 7650 4900
+Wire Wire Line
+	7650 4600 7950 4600
+Wire Wire Line
+	7650 4900 7950 4900
+Connection ~ 7650 4900
+Wire Wire Line
+	7650 4900 7650 4925
+$Comp
+L Jumper:Jumper_3_Bridged12 JP2
+U 1 1 6178A083
+P 7275 4700
+F 0 "JP2" V 7275 4767 50  0000 L CNN
+F 1 "Jumper_3_Bridged12" H 7275 4902 50  0001 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 7275 4700 50  0001 C CNN
+F 3 "~" H 7275 4700 50  0001 C CNN
+	1    7275 4700
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR011
+U 1 1 6178CACE
+P 7275 4450
+F 0 "#PWR011" H 7275 4300 50  0001 C CNN
+F 1 "+5V" H 7275 4600 50  0000 C CNN
+F 2 "" H 7275 4450 50  0001 C CNN
+F 3 "" H 7275 4450 50  0001 C CNN
+	1    7275 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 4700 7950 4700
+Wire Wire Line
+	7275 4950 7000 4950
+Text Label 7025 4950 0    50   ~ 0
+D7
+Wire Wire Line
+	4650 3475 4325 3475
+Text Label 4325 3475 0    50   ~ 0
+D7
+NoConn ~ 5650 2775
+NoConn ~ 5650 2975
+NoConn ~ 5650 3175
+NoConn ~ 5650 3375
+NoConn ~ 5650 3475
+NoConn ~ 5650 3575
+NoConn ~ 5650 3675
+NoConn ~ 4650 3375
+NoConn ~ 4650 3275
+NoConn ~ 4650 3175
+NoConn ~ 4650 3075
+NoConn ~ 4650 2975
+NoConn ~ 4650 2875
+NoConn ~ 4650 2775
+Wire Wire Line
+	2925 2500 3275 2500
+Wire Wire Line
+	2925 3825 3275 3825
+Wire Wire Line
+	5225 1700 5225 1750
+Text Label 4325 3675 0    50   ~ 0
+LEDOR
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO3
+U 1 1 617E0086
+P 5825 6925
+F 0 "LOGO3" H 5825 7200 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 5825 6700 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 5825 6925 50  0001 C CNN
+F 3 "~" H 5825 6925 50  0001 C CNN
+	1    5825 6925
+	1    0    0    -1  
+$EndComp
+$Comp
+L Symbols:Logo LOGO1
+U 1 1 617E28B2
+P 5025 6900
+F 0 "LOGO1" H 5155 6946 50  0000 L CNN
+F 1 "LanmiLab" H 5155 6855 50  0000 L CNN
+F 2 "Footprint:LanmiLab" H 5025 6900 50  0001 C CNN
+F 3 "" H 5025 6900 50  0001 C CNN
+	1    5025 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Symbols:Logo LOGO2
+U 1 1 617E4D4C
+P 5025 7225
+F 0 "LOGO2" H 5155 7271 50  0000 L CNN
+F 1 "KiCad" H 5155 7180 50  0000 L CNN
+F 2 "Footprint:Logo_KiCad" H 5025 7225 50  0001 C CNN
+F 3 "" H 5025 7225 50  0001 C CNN
+	1    5025 7225
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

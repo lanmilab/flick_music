@@ -1,0 +1,13 @@
+Reference, Quantity, Value, Footprint, Datasheet, Part Number, DATASHEET, MANUFACTURER,Note
+A1 ,1,Arduino_UNO_R3 Conn,Module:Arduino_UNO_R3,https://www.arduino.cc/en/Main/arduinoBoardUno,M20-9994045,,,
+C1 ,1,10nF,Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm,~,C315C103K1R5TA,,,
+J1 ,1,Conn_01x08,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Horizontal,~,68016-208HLF,,,
+J2 ,1,Conn_01x08,Connector_FFC-FPC:TE_0-1734839-8_1x08-1MP_P0.5mm_Horizontal,~,0-1734839-8,,,
+J3 ,1,RCA,Footprint:PJRAN1X1U01X,,PJRAN1X1U01X,http://datasheets.diptrace.com/con_rca_jack/pjran1x1u__x_series_cd.pdf,Switchcraft,
+J4 ,1,AudioJack3,Footprint:FC68131CLIFF,~,FC68131,,,
+J5 ,1,AMP BREAKOUT,Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical,https://www.adafruit.com/product/2130,PAM8302A Adafruit,,,Optional
+JP1 JP2 ,2,Jumper_3_Bridged12,Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels,~,,,,
+LOGO1 ,1,LanmiLab,Footprint:LanmiLab,,,,,
+LOGO2 ,1,KiCad,Footprint:Logo_KiCad,,,,,
+LOGO3 ,1,Logo_Open_Hardware_Small,Symbol:OSHW-Logo2_7.3x6mm_SilkScreen,~,,,,
+R1 ,1,4.75KOhm,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,~,MCMF0W4FF4751A50,,,
